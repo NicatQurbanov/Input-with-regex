@@ -1,0 +1,3 @@
+input:focus, input:active {
+    outline: 3px solid yellow;
+}
