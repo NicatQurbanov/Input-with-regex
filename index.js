@@ -1,17 +1,18 @@
-const p = document.getElementsByTagName('p')[0]
-const input = document.getElementsByTagName('input')[0];
-const numRegEx = /[0-9]+$/;
+const input = document.getElementById('name');
+const popUp = document.getElementsByClassName('popUp')[0];
+const nameRegEx = /^[a-z]+$/i;
+const numRegEx = /[0-9]/;
 
-document.addEventListener('keydown', (e) => {
-    p.textContent = `Keyboard: ${e.key}`;
-})
 
 input.addEventListener('input', () => {
-    if(numRegEx.test(input.value)) {
-        input.style.outline = '3px solid red'
-    }  else {
+    if(nameRegEx.test(input.value)) {
         input.style.outline = '3px solid green'
+        popUp.style.display = 'none'; 
+    }  else if (numRegEx.test(input.value)){
+        input.style.outline = '3px solid red'
+        popUp.style.display = 'block';  
+    } else {
+        input.style.outline = 'none'
     }
-        
 })
 

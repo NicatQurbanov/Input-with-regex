@@ -1,0 +1,30 @@
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+input:focus, input:active {
+    outline: 3px solid yellow;
+}
+
+.input {
+    display: block;
+}
+
+form {
+    margin: 50px 0 0 20px;
+    width: 25%;
+    padding: 25px;
+}
+
+.input, .popUp {
+    margin-top: 10px;
+}
+
+.popUp {
+    display: none;
+    color: gray;
+    font-size: 0.8rem;
+}
+
