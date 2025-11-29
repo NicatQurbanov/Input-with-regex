@@ -13,6 +13,7 @@ input.addEventListener('input', () => {
         popUp.style.display = 'block';  
     } else {
         input.style.outline = 'none'
+        popUp.style.display = 'none'; 
     }
 })
 
