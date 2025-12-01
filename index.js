@@ -1,7 +1,7 @@
 const input = document.getElementById('name');
 const popUp = document.getElementsByClassName('popUp')[0];
 const nameRegEx = /^[a-z]+$/i;
-const numRegEx = /[0-9]/;
+const numRegEx = /[0-9\W]/;
 
 
 input.addEventListener('input', () => {
